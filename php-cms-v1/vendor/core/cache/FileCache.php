@@ -1,0 +1,42 @@
+<?php
+namespace vendor\core\cache;
+
+
+/**
+ * File Cache class
+ * 
+ * @author Eugene <observer_md@yahoo.com>
+ */
+class FileCache implements Cache
+{
+    /**
+     * Establish cache connection
+     */
+    public function connect()
+    {
+        // connect
+    }
+    
+    /**
+     * Return data from cache
+     * 
+     * @param string $key
+     * @return mixed
+     */
+    public function get($key)
+    {
+        return null;
+    }
+
+    /**
+     * Store data in cache
+     * 
+     * @param string $key
+     * @param mixed  $value
+     * @param int    $ttl
+     */
+    public function set($key, $value, $ttl = 0)
+    {
+        // set
+    }
+}

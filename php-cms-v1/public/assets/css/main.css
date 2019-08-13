@@ -1,0 +1,47 @@
+.main-content * {
+    font-size: 12px;
+}
+
+div {
+    /* border: 1px solid silver; */
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* TABLE */
+table {
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.tbl-main-header,
+.tbl-main-footer {
+    height: 50px;
+}
+
+.tbl-main-content {
+    vertical-align: top;
+}
+
+.main-header,
+.main-footer {
+    text-align: center;
+    font-size: 18px;
+}
+.main-content {
+    padding: 10px;
+}
+
+.error {
+    color: red;
+}
