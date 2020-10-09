@@ -1,0 +1,45 @@
+# <IfModule mod_rewrite.c>
+#     <IfModule mod_negotiation.c>
+#         Options -MultiViews -Indexes
+#     </IfModule>
+
+#     RewriteEngine On
+
+#     # Handle Authorization Header
+#     RewriteCond %{HTTP:Authorization} .
+#     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+#     # Redirect Trailing Slashes If Not A Folder...
+#     RewriteCond %{REQUEST_FILENAME} !-d
+#     RewriteCond %{REQUEST_URI} (.+)/$
+#     RewriteRule ^ %1 [L,R=301]
+
+#     # Handle Front Controller...
+#     RewriteCond %{REQUEST_FILENAME} !-d
+#     RewriteCond %{REQUEST_FILENAME} !-f
+#     RewriteRule ^ index.php [L]
+# </IfModule>
+
+
+# Options +FollowSymLinks -Indexes
+# RewriteEngine On
+
+# RewriteCond %{HTTP:Authorization} .
+# RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteRule ^ index.php [L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+
+# JS/CSS
+# https://httpd.apache.org/docs/trunk/rewrite/remapping.html
+#
+# <link rel="stylesheet" type="text/css" href="/assets/css/main.v0001.css" media="screen">
+# <script type="text/javascript" src="/assets/js/main.v0001.js"></script>
+RewriteRule    "^/assets/js/(.+).v\d+\.js$"  "/assets/js/$1.js"     [PT]
+RewriteRule    "^/assets/css/(.+).v\d+\.css$"  "/assets/css/$1.css" [PT]
