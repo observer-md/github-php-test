@@ -1,0 +1,15 @@
+; https://packagist.org/packages/sonata-project/google-authenticator
+
+APP_NAME="Test Application"
+APP_ENV=development
+APP_KEY="FInZwgPBXelXcAVUe2jUCSyhYPS9t4TGEWvkeXJ7jpY="
+APP_DEBUG=true
+
+
+; DB CONNECTION
+DB_DRIVER="mysql"
+DB_HOST="127.0.0.1"
+DB_PORT=3306
+DB_NAME="db-name"
+DB_USERNAME="db-username"
+DB_PASSWORD="db-password"
