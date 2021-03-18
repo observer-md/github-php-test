@@ -1,15 +1,26 @@
-; https://packagist.org/packages/sonata-project/google-authenticator
-
+; APP CONFIG
 APP_NAME="Test Application"
 APP_ENV=development
+APP_TIMEZONE="UTC"
 APP_KEY="FInZwgPBXelXcAVUe2jUCSyhYPS9t4TGEWvkeXJ7jpY="
 APP_DEBUG=true
 
-
-; DB CONNECTION
+; DB CONFIG
 DB_DRIVER="mysql"
 DB_HOST="127.0.0.1"
 DB_PORT=3306
 DB_NAME="db-name"
 DB_USERNAME="db-username"
 DB_PASSWORD="db-password"
+DB_CHARSET="utf8"
+
+; CACHE CONFIG
+CACHE_DRIVER="redis"
+CACHE_HOST="127.0.0.1"
+CACHE_PORT=6379
+
+; COOKIE CONFIG
+COOKIE=""
+
+; SESSION CONFIG
+SESSION=""
