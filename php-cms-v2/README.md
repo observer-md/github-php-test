@@ -1,7 +1,7 @@
 ## Test Mini PHP Framework
 
 
-### Web application folder structure
+###### Web application folder structure
 - Application
     - app
         - Config
