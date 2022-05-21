@@ -5,8 +5,8 @@
 
 github-php-test
 
-About READMEs
+About READMEs <br/>
 https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
 
-Basic writing and formatting syntax
+Basic writing and formatting syntax <br/>
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
